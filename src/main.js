@@ -1,8 +1,8 @@
 import App from './App.vue';
 import Vue from 'vue';
-import axios from 'axios';
+import http from '../http/http'
 
-Vue.prototype.$http = axios
+Vue.prototype.$http = http
 Vue.config.productionTip = false
 
 new Vue({
