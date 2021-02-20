@@ -502,6 +502,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./rem.js":
+/*!****************!*\
+  !*** ./rem.js ***!
+  \****************/
+/***/ (() => {
+
+eval("// baseSize 要跟换算的基数一样\r\nlet baseSize = 50\r\n\r\nfunction setFontSize () {\r\n  // 页面宽度相对于 1920 缩放\r\n  let scale = (document.documentElement.clientWidth <= 1080 ? 1080 : document.documentElement.clientWidth) / 1920\r\n  // 设置页面根节点字体大小，最高放大比例为2）\r\n  document.documentElement.style.fontSize = baseSize * Math.min(scale, 2) + 'px'\r\n}\r\n// 初始化\r\nsetFontSize()\r\n\r\n// 监听窗口变化\r\nwindow.onresize = function () {\r\n  setFontSize()\r\n}\n\n//# sourceURL=webpack://music-demo/./rem.js?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -509,7 +519,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _http_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http/http */ \"./http/http.js\");\n/* harmony import */ var lib_flexible__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lib-flexible */ \"./node_modules/lib-flexible/flexible.js\");\n/* harmony import */ var lib_flexible__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lib_flexible__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\n\r\nvue__WEBPACK_IMPORTED_MODULE_3__.default.prototype.$http = _http_http__WEBPACK_IMPORTED_MODULE_1__.default\r\nvue__WEBPACK_IMPORTED_MODULE_3__.default.config.productionTip = false\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_3__.default({\r\n  render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_0__.default),\r\n}).$mount('#app')\n\n//# sourceURL=webpack://music-demo/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _http_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http/http */ \"./http/http.js\");\n/* harmony import */ var lib_flexible__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lib-flexible */ \"./node_modules/lib-flexible/flexible.js\");\n/* harmony import */ var lib_flexible__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lib_flexible__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _rem_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../rem.js */ \"./rem.js\");\n/* harmony import */ var _rem_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_rem_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\n\r\nvue__WEBPACK_IMPORTED_MODULE_4__.default.prototype.$http = _http_http__WEBPACK_IMPORTED_MODULE_1__.default\r\nvue__WEBPACK_IMPORTED_MODULE_4__.default.config.productionTip = false\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_4__.default({\r\n  render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_0__.default),\r\n}).$mount('#app')\n\n//# sourceURL=webpack://music-demo/./src/main.js?");
 
 /***/ })
 

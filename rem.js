@@ -1,5 +1,5 @@
 // baseSize 要跟换算的基数一样
-let baseSize = 100
+let baseSize = 50
 
 function setFontSize () {
   // 页面宽度相对于 1920 缩放

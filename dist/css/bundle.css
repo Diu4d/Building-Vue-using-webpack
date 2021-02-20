@@ -9,83 +9,84 @@
   box-sizing: border-box;
 }
 .search .song_search {
-  height: 0.46666667rem;
-  width: 4rem;
-  border-radius: 0.02666667rem;
-  margin-top: 0.26666667rem;
-  border: 0.04rem solid #80fff9;
+  height: 0.7rem;
+  width: 6rem;
+  border-radius: 0.04rem;
+  margin-top: 0.4rem;
+  border: 0.06rem solid #80fff9;
   display: inline;
   text-align: center;
   box-sizing: border-box;
 }
 .search .btn {
   display: inline;
-  margin-top: 0.26666667rem;
-  height: 0.48rem;
-  width: 0.93333333rem;
-  border: 0.04rem solid #76f1f1;
+  margin-top: 0.4rem;
+  height: 0.72rem;
+  width: 1.4rem;
+  border: 0.06rem solid #76f1f1;
   background: #fff;
-  border-radius: 0.06666667rem;
-  margin-left: 0.06666667rem;
+  border-radius: 0.1rem;
+  margin-left: 0.1rem;
 }
 .list_song {
-  width: 5.33333333rem;
-  height: 5.33333333rem;
+  width: 8rem;
+  height: 8rem;
   background: #f8d1d1;
   margin: 0 auto;
-  margin-top: 0.13333333rem;
+  margin-top: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .list_song .list_img {
-  width: 2.66666667rem;
-  height: 2.66666667rem;
+  width: 4rem;
+  height: 4rem;
 }
 .list_song .name {
-  margin-bottom: 0.13333333rem;
+  margin-bottom: 0.2rem;
 }
 .list_song .play {
-  width: 5.06666667rem;
-  margin-top: 0.13333333rem;
-  height: 0.66666667rem;
+  width: 7.6rem;
+  margin-top: 0.2rem;
+  height: 1rem;
 }
 .comment {
   box-sizing: border-box;
-  width: 5.33333333rem;
+  width: 8rem;
   margin: 0 auto;
   background: #ccc;
 }
 .comment .image {
   border-radius: 50%;
-  width: 0.66666667rem;
-  height: 0.66666667rem;
-  margin-top: 0.26666667rem;
-  border: 0.01333333rem dashed red;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.4rem;
+  border: 0.02rem dashed red;
 }
 .comment .user_name {
   position: relative;
 }
 .comment .user_name .nickname {
   display: inline;
-  line-height: 0.66666667rem;
-  height: 0.66666667rem;
-  bottom: 0.2rem;
-  left: 0.8rem;
+  line-height: 1rem;
+  height: 1rem;
+  bottom: 0.3rem;
+  left: 1.2rem;
   position: absolute;
 }
 .comment .user_name .name {
   position: absolute;
-  left: 0.8rem;
-  bottom: 0.06666667rem;
+  left: 1.2rem;
+  bottom: 0.1rem;
   color: #c51313;
   font-size: 87.5%;
 }
 .comment .comments {
-  padding: 0.13333333rem;
+  padding: 0.2rem;
 }
 * {
   margin: 0;
   padding: 0;
+  font-size: 0.32rem;
 }

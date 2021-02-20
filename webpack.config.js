@@ -38,7 +38,7 @@ module.exports = {
         use:[MiniCssExtractPlugin.loader,'css-loader',{
           loader:'px2rem-loader',
           options: {
-            remUni:16,
+            remUnit:50,
             remPrecision:8
           }
         },
