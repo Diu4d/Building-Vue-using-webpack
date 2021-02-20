@@ -31,11 +31,19 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader,'css-loader']
+        use: ['style-loader'],
       },
       {
         test:/\.less$/,
-        use:['style-loader','css-loader','less-loader']
+        use:[MiniCssExtractPlugin.loader,'css-loader',{
+          loader:'px2rem-loader',
+          options: {
+            remUni:16,
+            remPrecision:8
+          }
+        },
+        'less-loader'
+      ]
       },
       ],
     },
@@ -44,13 +52,12 @@ module.exports = {
       template: path.resolve(__dirname, './public/index.html'),
       //创建文件的位置
       filename:'html/[name].html',
-      //文件名
-      
+      //文件名      
     }),
     new VueloaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
+      filename: 'css/[name].css',
       //打包后文件的位置
     }),
-  ]
+  ],
 }

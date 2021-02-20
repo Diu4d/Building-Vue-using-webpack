@@ -17,11 +17,13 @@
          <audio class="play" :src="list.music_url" controls></audio>
       </div>
       <div class="comment">
-        <h4 style="margin-top:10px">评论区</h4>
-        <img class="image" :src="list.avatarurl" alt="">
-        <p class="nickname">{{list.nickname}}</p>
-        <p class="name">{{list.name}}</p>
-        <div>{{list.comments}}</div>
+        <h4 style="padding-top:10px;padding-left:10px ">评论区</h4>
+        <img style="margin-left:5px" class="image" :src="list.avatarurl" alt="">
+        <div class="user_name">
+          <p class="nickname">{{list.nickname}}</p>
+          <p class="name">{{list.name}}</p>
+        </div>
+        <div class="comments">{{list.comments}}</div>
       </div>
     </div>
   </div>
@@ -39,7 +41,6 @@ export default {
    getData() {
      this.$http.get('?format=json').then(res => {
        this.list = res.data
-       console.log(res.data);
      })
    }
  },
@@ -50,29 +51,30 @@ export default {
 </script>
 
 <style lang="less">
-.container{
+  .container{
   width: 100vw;
   height: 100vh;
-}
+  }
   .search{
     display: flex;
     justify-content:center;
     align-items:flex-start;
-
+    box-sizing: border-box;
     .song_search{
-      height: 30px;
+      height: 35px;
       width: 300px;
       border-radius: 2px;
       margin-top: 20px;
       border: 3px solid rgb(128, 255, 249);
       display: inline;
       text-align: center;
+      box-sizing: border-box;
     }
     .btn{
       display: inline;
       margin-top: 20px;
       height: 36px;
-      width: 50px;
+      width: 70px;
       border: 3px solid rgb(118, 241, 241);
       background: #fff;
       border-radius:5px;
@@ -97,14 +99,16 @@ export default {
         margin-bottom: 10px;
       }
       .play{
-        margin-top: 20px;
+        width: 380px;
+        margin-top: 10px;
+        height: 50px;
       }
     }
     .comment{
+      box-sizing: border-box;
       width: 400px;
-      height: 100px;
-      position: relative;
       margin: 0 auto;
+      background: #ccc;
       .image{
         border-radius: 50%;
         width: 50px;
@@ -112,18 +116,26 @@ export default {
         margin-top: 20px;
         border: 1px dashed red;
       }
+      .user_name{
+        position: relative;
       .nickname{
         display: inline;
         line-height: 50px;
         height: 50px;
+        bottom: 15px;
+        left: 60px;
         position: absolute;
       }
     .name{
       position: absolute;
-      left: 55px;
-      bottom: 10px;
-      color: #ccc;
+      left: 60px;
+      bottom: 5px;
+      color: #c51313;
       font-size: 87.5%;
     }
+  }
+  .comments{
+    padding: 10px;
+  }
   }
 </style>
