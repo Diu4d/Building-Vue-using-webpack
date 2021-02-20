@@ -12,21 +12,21 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].js',  
+    filename: 'js/[name].js',
     //出口文件
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     port: 9000,
     compress: true,
-    index:'html/bundle.html'
+    index: 'html/bundle.html'
     //本地服务器
   },
-  mode:'development',
+  mode: 'development',
   module: {
     rules: [
       {
-        test:/\.vue$/,
+        test: /\.vue$/,
         loader: 'vue-loader',
       },
       {
@@ -34,24 +34,24 @@ module.exports = {
         use: ['style-loader'],
       },
       {
-        test:/\.less$/,
-        use:[MiniCssExtractPlugin.loader,'css-loader',{
-          loader:'px2rem-loader',
+        test: /\.less$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', {
+          loader: 'px2rem-loader',
           options: {
-            remUnit:50,
-            remPrecision:8
+            remUnit: 50,
+            remPrecision: 8
           }
         },
-        'less-loader'
-      ]
+          'less-loader'
+        ]
       },
-      ],
-    },
-  plugins:[
+    ],
+  },
+  plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.html'),
       //创建文件的位置
-      filename:'html/[name].html',
+      filename: 'html/[name].html',
       //文件名      
     }),
     new VueloaderPlugin(),

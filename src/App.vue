@@ -5,19 +5,19 @@
 </template>
 
 <script>
-import aaa from './views/aaa.vue'
+import aaa from "./views/aaa.vue";
 export default {
-  components:{
-    aaa
-  }
-}
+  components: {
+    aaa,
+  },
+};
 </script>
 
 <style lang="less">
-  *{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
 </style>>
  
