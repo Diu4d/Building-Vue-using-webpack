@@ -11,9 +11,9 @@
 .search .song_search {
   height: 0.7rem;
   width: 6rem;
-  border-radius: 0.04rem;
+  border-radius: 0.02rem;
   margin-top: 0.4rem;
-  border: 0.06rem solid #80fff9;
+  border: 0.02rem solid #80fff9;
   display: inline;
   text-align: center;
   box-sizing: border-box;
@@ -23,7 +23,7 @@
   margin-top: 0.4rem;
   height: 0.72rem;
   width: 1.4rem;
-  border: 0.06rem solid #76f1f1;
+  border: 0.02rem solid #76f1f1;
   background: #fff;
   border-radius: 0.1rem;
   margin-left: 0.1rem;
@@ -55,7 +55,8 @@
   box-sizing: border-box;
   width: 8rem;
   margin: 0 auto;
-  background: #ccc;
+  background: #e0d4d4;
+  border: 0.02rem solid;
 }
 .comment .image {
   border-radius: 50%;

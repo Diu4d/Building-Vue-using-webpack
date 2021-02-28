@@ -366,7 +366,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _views_aaa_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/aaa.vue */ \"./src/views/aaa.vue\");\n//\n//\n//\n//\n//\n//\n\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n  components:{\r\n    aaa: _views_aaa_vue__WEBPACK_IMPORTED_MODULE_0__.default\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack://music-demo/./src/App.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _views_aaa_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/aaa.vue */ \"./src/views/aaa.vue\");\n//\n//\n//\n//\n//\n//\n\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n  components: {\r\n    aaa: _views_aaa_vue__WEBPACK_IMPORTED_MODULE_0__.default,\r\n  },\r\n});\r\n\n\n//# sourceURL=webpack://music-demo/./src/App.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -388,7 +388,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n data(){\r\n   return{\r\n     songName:'',\r\n     list:''\r\n   }\r\n },\r\n methods:{\r\n   getData() {\r\n     this.$http.get('?format=json').then(res => {\r\n       this.list = res.data\r\n     })\r\n   }\r\n },\r\n created(){\r\n   this.getData()\r\n }\r\n});\r\n\n\n//# sourceURL=webpack://music-demo/./src/views/aaa.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n  data() {\r\n    return {\r\n      songName: \"\",\r\n      list: \"\",\r\n    };\r\n  },\r\n  methods: {\r\n    getData() {\r\n      this.$http.get(\"?format=json\").then((res) => {\r\n        this.list = res.data;\r\n      });\r\n    },\r\n  },\r\n  created() {\r\n    this.getData();\r\n  },\r\n});\r\n\n\n//# sourceURL=webpack://music-demo/./src/views/aaa.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -508,7 +508,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************/
 /***/ (() => {
 
-eval("// baseSize 要跟换算的基数一样\r\nlet baseSize = 50\r\n\r\nfunction setFontSize () {\r\n  // 页面宽度相对于 1920 缩放\r\n  let scale = (document.documentElement.clientWidth <= 1080 ? 1080 : document.documentElement.clientWidth) / 1920\r\n  // 设置页面根节点字体大小，最高放大比例为2）\r\n  document.documentElement.style.fontSize = baseSize * Math.min(scale, 2) + 'px'\r\n}\r\n// 初始化\r\nsetFontSize()\r\n\r\n// 监听窗口变化\r\nwindow.onresize = function () {\r\n  setFontSize()\r\n}\n\n//# sourceURL=webpack://music-demo/./rem.js?");
+eval("// baseSize 要跟换算的基数一样\r\nlet baseSize = 50\r\n\r\nfunction setFontSize() {\r\n  // 页面宽度相对于 1920 缩放\r\n  let scale = (document.documentElement.clientWidth <= 1080 ? 1080 : document.documentElement.clientWidth) / 1920\r\n  // 设置页面根节点字体大小，最高放大比例为2）\r\n  document.documentElement.style.fontSize = baseSize * Math.min(scale, 2) + 'px'\r\n}\r\n// 初始化\r\nsetFontSize()\r\n\r\n// 监听窗口变化\r\nwindow.onresize = function () {\r\n  setFontSize()\r\n}\n\n//# sourceURL=webpack://music-demo/./rem.js?");
 
 /***/ }),
 

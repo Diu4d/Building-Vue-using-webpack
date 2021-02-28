@@ -13,14 +13,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
-    //出口文件
+    //出口文件名及路径
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
+    //启动路径根目录
     port: 9000,
     compress: true,
-    index: 'html/bundle.html'
-    //本地服务器
+    index: 'html/index.html'
+    //首要加载的文件
   },
   mode: 'development',
   module: {
@@ -36,6 +37,7 @@ module.exports = {
       {
         test: /\.less$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', {
+          //抽离less并配置不同机型字体大小自适应
           loader: 'px2rem-loader',
           options: {
             remUnit: 50,
@@ -49,15 +51,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      //自动引入文件
       template: path.resolve(__dirname, './public/index.html'),
-      //创建文件的位置
-      filename: 'html/[name].html',
-      //文件名      
+      //模板
+      filename: 'html/index.html',
+      //生成的文件名      
     }),
     new VueloaderPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
-      //打包后文件的位置
+      //打包后css文件的位置
     }),
   ],
 }

@@ -70,9 +70,9 @@ export default {
   .song_search {
     height: 35px;
     width: 300px;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-top: 20px;
-    border: 3px solid rgb(128, 255, 249);
+    border: 1px solid rgb(128, 255, 249);
     display: inline;
     text-align: center;
     box-sizing: border-box;
@@ -82,7 +82,7 @@ export default {
     margin-top: 20px;
     height: 36px;
     width: 70px;
-    border: 3px solid rgb(118, 241, 241);
+    border: 1px solid rgb(118, 241, 241);
     background: #fff;
     border-radius: 5px;
     margin-left: 5px;
@@ -115,7 +115,8 @@ export default {
   box-sizing: border-box;
   width: 400px;
   margin: 0 auto;
-  background: #ccc;
+  background: rgb(224, 212, 212);
+  border: 1px solid;
   .image {
     border-radius: 50%;
     width: 50px;
