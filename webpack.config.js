@@ -16,12 +16,10 @@ module.exports = {
     //出口文件名及路径
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    //启动路径根目录
-    port: 9000,
-    compress: true,
-    index: 'html/index.html'
-    //首要加载的文件
+    contentBase:'./dist/html',
+    port: 8080,
+    open:true,
+    hot:true
   },
   mode: 'development',
   module: {
