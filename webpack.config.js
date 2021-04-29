@@ -1,4 +1,4 @@
-const path = require('path');
+const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //自动引入资源以及创建html入口文件
 const VueloaderPlugin = require('vue-loader/lib/plugin');
@@ -11,15 +11,15 @@ module.exports = {
     //入口文件
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
     //出口文件名及路径
   },
   devServer: {
-    contentBase:'./dist/html',
+    contentBase: './dist/html',
     port: 8080,
-    open:true,
-    hot:true
+    open: true,
+    hot: true
   },
   mode: 'development',
   module: {
@@ -50,9 +50,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       //自动引入文件
-      template: path.resolve(__dirname, './public/index.html'),
+      template: resolve(__dirname, './public/index.html'),
       //模板
-      filename: 'html/index.html',
+      filename: 'html/[name].html',
       //生成的文件名      
     }),
     new VueloaderPlugin(),
